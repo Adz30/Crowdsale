@@ -23,7 +23,7 @@ async function main() {
 	const transaction = await token.transfer(crowdsale.address, ethers.utils.parseUnits(MAX_SUPPLY, 'ether'))
 	await transaction.wait()
 
-	console.log(`Tokens transferred to Crowdsale`)
+	console.log(`Tokens transferred to Crowdsale\n`)
 }
 
 main().catch((error) => {
