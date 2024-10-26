@@ -3,6 +3,8 @@ hello!,
 this is my Crowdsale DAPP
 following from my token contract i want to build and interact with a smart contract using a front end website.
 
+here is the deployed website https://purring-branch-whining.on-fleek.app/
+
 Try running some of the following tasks:
 
 ```shell
