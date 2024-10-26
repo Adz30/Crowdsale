@@ -1,6 +1,7 @@
-# Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+hello!,
+this is my Crowdsale DAPP
+following from my token contract i want to build and interact with a smart contract using a front end website.
 
 Try running some of the following tasks:
 
