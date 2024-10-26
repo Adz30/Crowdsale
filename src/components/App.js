@@ -7,7 +7,7 @@
  import Info from './Info';
  import Loading from './Loading';
  import Progress from './Progress';
-
+ import Buy from './Buy';
 
  import TOKEN_ABI from '../abis/Token.json'
  import CROWDSALE_ABI from '../abis/Crowdsale.json'
@@ -45,6 +45,7 @@
 
 		const accountBalance = ethers.utils.formatUnits(await token.balanceOf(account))
 		setAccountBalance(accountBalance)
+		console.log(accountBalance)
 		
 		const price = ethers.utils.formatUnits(await crowdsale.price())
 		setPrice(price)
@@ -81,6 +82,7 @@
 				) : (
 				<>
 				<p className= 'text-center'><strong>Current Price:</strong> {price} ETH</p>
+				<Buy provider={provider} price={price} crowdsale={crowdsale} setIsLoading={setIsLoading} />
 				<Progress maxTokens={maxTokens} tokensSold={tokensSold} />
 				</>
 				)}
